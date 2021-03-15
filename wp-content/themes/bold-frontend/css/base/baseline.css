@@ -1,0 +1,52 @@
+@define-mixin atSmall {
+  @media (min-width: 576px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmallMedium {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (min-width: 1024px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+
+body {
+  color: $color--font;
+  font-family: 'Rubik', sans-serif;
+  
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $color--green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, ul, ol {
+  margin: 0 0 1.65em 0;
+}
+
+p, li {
+  line-height: 1.65;
+}

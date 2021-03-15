@@ -1,0 +1,12 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 26px;
+
+  @mixin atMedium {
+    padding-top: 24px;
+  }
+
+  @mixin atLarge {
+    padding-top: 56px;
+  }
+}

@@ -1,0 +1,101 @@
+.plans-single {
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  border: 2px solid $color--light-grey;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    border: 2px solid $color--green;
+  }
+
+  &:hover &__btn {
+    color: $color--brand-main;
+    background: $color--green;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: $color--brand-main;
+  }
+
+  &__img {
+    display: block;
+    align-self: center;
+    margin: 0 auto 35px;
+  }
+
+  &__content {
+    & ul {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 5px;
+      padding-left: 60px;
+      align-items: center;
+
+      @mixin atSmall {
+        margin: 0 auto;
+        padding-left: 160px;
+      }
+
+      @mixin atSmallMedium {
+        margin: 0 auto;
+        padding-left: 60px;
+      }
+    }
+
+    & ul li {
+      font-size: 14px;
+      padding-bottom: 10px;
+      line-height: 2;
+      position: relative;
+      padding-left: 40px;
+      &:before {
+        content: url("../wp-content/themes/bold-frontend/images/tick.png ");
+        position: absolute;
+        display: block;
+        top: 2px;
+        left: 0;
+      }
+    }
+  }
+
+  &__btn-box {
+    text-align: center;
+  }
+
+  &__value {
+    font-size: 25px;
+    font-weight: 600;
+    color: $color--brand-main;
+
+    & span {
+      color: $color--font;
+      font-weight: 400;
+      margin-left: 5px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid $color--green;
+    min-width: 178px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: $color--green;
+    background: $color--white;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+}

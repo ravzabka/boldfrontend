@@ -1,0 +1,94 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background: $color--grey;
+
+  @mixin atSmall {
+    padding-top: 40px;
+  }
+
+  @mixin atMedium {
+    padding-top: 90px;
+  }
+
+  @mixin atLarge {
+    padding-top: 190px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+
+    @mixin atSmallMedium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @mixin atMedium {
+      grid-template-columns: 50% repeat(3, 1fr);
+    }
+  }
+
+  &__nav-title {
+    margin: 0;
+    font-size: 18px;
+    color: $color--brand-main;
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 60%;
+    text-align: left;
+  }
+
+  &__col {
+    & ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    & ul li {
+      padding-bottom: 15px;
+    }
+
+    & ul li a {
+      color: $color--font;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      transition: all 0.3s ease-out;
+    }
+
+    & ul li a:hover {
+      color: $color--brand-main;
+      padding-left: 5px;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding-bottom: 15px;
+  }
+
+  &__link {
+    color: $color--font;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: $color--brand-main;
+      padding-left: 5px;
+    }
+  }
+}

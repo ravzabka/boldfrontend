@@ -1,0 +1,70 @@
+.company {
+  padding-bottom: 50px;
+
+  &__container {
+    padding: 35px 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 40px 114px -40px rgba(#0d1025, 0.06);
+
+    @mixin atSmall {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    @mixin atMedium {
+      justify-content: center;
+      padding-left: 0px;
+    }
+
+    &--center {
+      @mixin atSmallMedium {
+        border-left: 2px solid $color--grey-border;
+        border-right: 2px solid $color--grey-border;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 30px;
+    @mixin atSmall {
+      margin-right: 10px;
+    }
+
+    @mixin atSmallMedium {
+      margin-right: 30px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  &__value {
+    font-size: 25px;
+    font-weight: 700;
+    color: $color--brand-main;
+    text-align: left;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: $color--font;
+  }
+}

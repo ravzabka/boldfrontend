@@ -1,0 +1,20 @@
+.logo {
+
+	font-size: 20px;
+	font-weight: 500;
+	color: $color--brand-main;
+	text-decoration: none;
+	transition: color .3s ease-out;
+
+	&__uppercase {
+
+		text-transform: uppercase;
+	}
+
+	&:hover {
+
+		color: $color--green;
+
+	}
+
+}
