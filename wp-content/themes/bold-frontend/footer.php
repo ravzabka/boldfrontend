@@ -13,12 +13,16 @@
 
           if(get_theme_mod('ju_facebook_handle')){ ?>
           <a href="https://facebook.com/<?php echo get_theme_mod('ju_facebook_handle');?>" ><img class="social__image" src="<?php echo get_theme_file_uri('/images/Facebook.png'); ?>" alt=""></a>                
+           <?php }  
+
+            if(get_theme_mod('ju_twitter_handle')){ ?>
+          <a href="https://twitter.com/<?php echo get_theme_mod('ju_twitter_handle');?>" ><img class="social__image" src="<?php echo get_theme_file_uri('/images/Twitter.png'); ?>" alt=""></a>                
+           <?php }  
+
+            if(get_theme_mod('ju_instagram_handle')){ ?>
+          <a href="https://instagram.com/<?php echo get_theme_mod('ju_instagram_handle');?>" ><img class="social__image" src="<?php echo get_theme_file_uri('/images/Instagram.png'); ?>" alt=""></a>                
            <?php } ?>    
 
-
-
-          <a href="#"><img class="social__image" src="<?php echo get_theme_file_uri('/images/Twitter.png'); ?>" alt=""></a>
-          <a href="#"><img  class="social__image"src="<?php echo get_theme_file_uri('/images/Instagram.png'); ?>" alt=""></a>        
         </div>
         <p class="footer__copyrights"><?php echo get_theme_mod('ju_footer_copyright_text');?></p>
       </div>
